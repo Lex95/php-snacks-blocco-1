@@ -60,6 +60,7 @@ $dates = array_keys($posts);
             <?php
             for ($j = 0; $j < count($posts[$dates[$i]]); $j++) {
                 ?>
+                <!-- per non interrompere il flusso php potrei innestare html facendo "echo <li> ... echo </li>" -->
                 <li><?php echo $posts[$dates[$i]][$j]["text"] ?></li>
                 <?php
             }
