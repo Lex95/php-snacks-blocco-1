@@ -4,22 +4,32 @@ $partite = [
     [
         "squadraCasa" => "Rossi",
         "squadraOspite" => "Bianchi",
+        "puntiCasa" => rand(0, 50),
+        "puntiOspite" => rand(0, 50)
     ],
     [
         "squadraCasa" => "Verdi",
         "squadraOspite" => "Neri",
+        "puntiCasa" => rand(0, 50),
+        "puntiOspite" => rand(0, 50)
     ],
     [
         "squadraCasa" => "Blu",
         "squadraOspite" => "Azzurri",
+        "puntiCasa" => rand(0, 50),
+        "puntiOspite" => rand(0, 50)
     ],
     [
         "squadraCasa" => "Marroni",
         "squadraOspite" => "Rosa",
+        "puntiCasa" => rand(0, 50),
+        "puntiOspite" => rand(0, 50)
     ],
     [
         "squadraCasa" => "Viola",
         "squadraOspite" => "Arancioni",
+        "puntiCasa" => rand(0, 50),
+        "puntiOspite" => rand(0, 50)
     ]
 ]
 
@@ -40,7 +50,7 @@ $partite = [
     for ($i = 0; $i < count($partite);   $i++) {
         ?>
         <li>
-            <?php echo $partite[$i]["squadraCasa"] . " - " . $partite[$i]["squadraOspite"] . " | " . rand(0, 50) . "-" . rand(0, 50) ?>
+            <?php echo $partite[$i]["squadraCasa"] . " - " . $partite[$i]["squadraOspite"] . " | " . $partite[$i]["puntiCasa"] . "-" . $partite[$i]["puntiOspite"] ?>
         </li>
         <?php
     }
